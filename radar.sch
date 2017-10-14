@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ad8343
+LIBS:2450bl15b100
+LIBS:mga-645t6
+LIBS:qpa5219
+LIBS:2500bp15m400
+LIBS:pd2425n5050s2
+LIBS:max2750
+LIBS:taper
+LIBS:2450bl15b050
+LIBS:tlv4172
+LIBS:radar-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3010 2340 1220 1110
+U 59D54271
+F0 "VCO" 60
+F1 "vco.sch" 60
+F2 "OUT" I R 4230 2810 60 
+F3 "TUNE" I L 3010 2570 60 
+F4 "nEN" I L 3010 3000 60 
+$EndSheet
+$Sheet
+S 4550 2320 970  1150
+U 59D54F25
+F0 "SPLITTER" 60
+F1 "splitter.sch" 60
+F2 "IN" I L 4550 2810 60 
+F3 "OUT1" I R 5520 2540 60 
+F4 "OUT2" I R 5520 3210 60 
+$EndSheet
+$Sheet
+S 6240 2060 1130 810 
+U 59D5541A
+F0 "POWER_AMP" 60
+F1 "pa.sch" 60
+F2 "IN" I L 6240 2540 60 
+F3 "OUT" I R 7370 2470 60 
+F4 "EN" I L 6240 2730 60 
+F5 "PDET" I R 7370 2700 60 
+$EndSheet
+Text Notes 3240 2140 0    60   ~ 0
+-3dBm, 3.3V, 17mA
+Wire Wire Line
+	4230 2810 4550 2810
+Text Notes 6200 1930 0    60   ~ 0
++32 dB, 5V 600mA, max VSWR 4:1
+Wire Wire Line
+	5520 2540 6240 2540
+$Comp
+L Antenna AE?
+U 1 1 59D579C7
+P 8440 2070
+F 0 "AE?" H 8365 2145 50  0000 R CNN
+F 1 "Antenna" H 8365 2070 50  0000 R CNN
+F 2 "" H 8440 2070 50  0001 C CNN
+F 3 "" H 8440 2070 50  0001 C CNN
+	1    8440 2070
+	1    0    0    -1  
+$EndComp
+$Comp
+L taper T?
+U 1 1 59D57BA6
+P 8000 2470
+F 0 "T?" H 8000 2620 60  0000 C CNN
+F 1 "taper" H 7900 2320 60  0000 C CNN
+F 2 "" H 8000 2470 60  0001 C CNN
+F 3 "" H 8000 2470 60  0001 C CNN
+	1    8000 2470
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8440 2270 8440 2470
+Wire Wire Line
+	8440 2470 8300 2470
+Wire Wire Line
+	7700 2470 7370 2470
+$Sheet
+S 6240 3120 1130 1260
+U 59D57E33
+F0 "MIXER" 60
+F1 "mixer.sch" 60
+F2 "OUTP" I R 7370 3640 60 
+F3 "OUTM" I R 7370 3750 60 
+F4 "RF_IN" I L 6240 4070 60 
+F5 "LO_IN" I L 6240 3210 60 
+$EndSheet
+$Sheet
+S 3290 3780 2090 1190
+U 59D58014
+F0 "INPUT_AMP" 60
+F1 "input.sch" 60
+F2 "RF_IN" I L 3290 4380 60 
+F3 "RF_OUT" I R 5380 4070 60 
+F4 "EN1" I L 3290 4660 60 
+F5 "EN2" I L 3290 4760 60 
+$EndSheet
+$Sheet
+S 7820 3120 1180 1280
+U 59D5807B
+F0 "BASEBAND" 60
+F1 "rf2baseband.sch" 60
+F2 "INP" I L 7820 3640 60 
+F3 "INM" I L 7820 3750 60 
+F4 "OUT" I R 9000 3690 60 
+$EndSheet
+Wire Wire Line
+	5520 3210 6240 3210
+$Comp
+L Antenna AE?
+U 1 1 59D63482
+P 2110 3980
+F 0 "AE?" H 2035 4055 50  0000 R CNN
+F 1 "Antenna" H 2035 3980 50  0000 R CNN
+F 2 "" H 2110 3980 50  0001 C CNN
+F 3 "" H 2110 3980 50  0001 C CNN
+	1    2110 3980
+	-1   0    0    -1  
+$EndComp
+$Comp
+L taper T?
+U 1 1 59D63488
+P 2550 4380
+F 0 "T?" H 2550 4530 60  0000 C CNN
+F 1 "taper" H 2450 4230 60  0000 C CNN
+F 2 "" H 2550 4380 60  0001 C CNN
+F 3 "" H 2550 4380 60  0001 C CNN
+	1    2550 4380
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2110 4180 2110 4380
+Wire Wire Line
+	2110 4380 2250 4380
+Text Notes 6360 4570 0    60   ~ 0
++0 dB, 5V 60mA
+Text Notes 3680 5150 0    60   ~ 0
++0-30 dB, 3.3V 30mA
+Wire Wire Line
+	2850 4380 3290 4380
+Wire Wire Line
+	5380 4070 6240 4070
+Text Notes 4830 2200 0    60   ~ 0
+-6.5 dB
+Wire Wire Line
+	7370 3640 7820 3640
+Wire Wire Line
+	7820 3750 7370 3750
+$Comp
+L +12VA #PWR?
+U 1 1 59E12587
+P 2240 5700
+F 0 "#PWR?" H 2240 5550 50  0001 C CNN
+F 1 "+12VA" H 2240 5840 50  0000 C CNN
+F 2 "" H 2240 5700 50  0001 C CNN
+F 3 "" H 2240 5700 50  0001 C CNN
+	1    2240 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 59E126EA
+P 1820 5680
+F 0 "#PWR?" H 1820 5530 50  0001 C CNN
+F 1 "+BATT" H 1820 5820 50  0000 C CNN
+F 2 "" H 1820 5680 50  0001 C CNN
+F 3 "" H 1820 5680 50  0001 C CNN
+	1    1820 5680
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 59E12784
+P 3220 5690
+F 0 "#PWR?" H 3220 5540 50  0001 C CNN
+F 1 "+3V3" H 3220 5830 50  0000 C CNN
+F 2 "" H 3220 5690 50  0001 C CNN
+F 3 "" H 3220 5690 50  0001 C CNN
+	1    3220 5690
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59E1281E
+P 2860 5700
+F 0 "#PWR?" H 2860 5550 50  0001 C CNN
+F 1 "+5V" H 2860 5840 50  0000 C CNN
+F 2 "" H 2860 5700 50  0001 C CNN
+F 3 "" H 2860 5700 50  0001 C CNN
+	1    2860 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 8050 4590 0    60   ~ 0
+12 V, 10mA
+$EndSCHEMATC

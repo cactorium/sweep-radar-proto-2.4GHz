@@ -1,0 +1,235 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ad8343
+LIBS:2450bl15b100
+LIBS:mga-645t6
+LIBS:qpa5219
+LIBS:2500bp15m400
+LIBS:pd2425n5050s2
+LIBS:max2750
+LIBS:taper
+LIBS:2450bl15b050
+LIBS:tlv4172
+LIBS:radar-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX2750 U?
+U 1 1 59D5427A
+P 5090 3570
+F 0 "U?" H 5090 3570 60  0000 C CNN
+F 1 "MAX2750" H 5340 3020 60  0000 C CNN
+F 2 "" H 5090 3570 60  0001 C CNN
+F 3 "" H 5090 3570 60  0001 C CNN
+	1    5090 3570
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59D54372
+P 6720 3370
+F 0 "C?" H 6730 3440 50  0000 L CNN
+F 1 "220u" H 6730 3290 50  0000 L CNN
+F 2 "" H 6720 3370 50  0001 C CNN
+F 3 "" H 6720 3370 50  0001 C CNN
+	1    6720 3370
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59D543D5
+P 7000 3360
+F 0 "C?" H 7010 3430 50  0000 L CNN
+F 1 "220u" H 7010 3280 50  0000 L CNN
+F 2 "" H 7000 3360 50  0001 C CNN
+F 3 "" H 7000 3360 50  0001 C CNN
+	1    7000 3360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5740 3420 5830 3420
+Wire Wire Line
+	5830 3420 5830 3110
+Wire Wire Line
+	5740 3220 7000 3220
+Wire Wire Line
+	6720 3220 6720 3270
+Wire Wire Line
+	7000 3220 7000 3260
+Connection ~ 6720 3220
+$Comp
+L GND #PWR?
+U 1 1 59D5445A
+P 6870 3770
+F 0 "#PWR?" H 6870 3520 50  0001 C CNN
+F 1 "GND" H 6870 3620 50  0000 C CNN
+F 2 "" H 6870 3770 50  0001 C CNN
+F 3 "" H 6870 3770 50  0001 C CNN
+	1    6870 3770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6720 3470 6720 3550
+Wire Wire Line
+	6720 3550 7000 3550
+Wire Wire Line
+	7000 3550 7000 3460
+Wire Wire Line
+	6870 3770 6870 3550
+Connection ~ 6870 3550
+$Comp
+L GND #PWR?
+U 1 1 59D54491
+P 4890 4380
+F 0 "#PWR?" H 4890 4130 50  0001 C CNN
+F 1 "GND" H 4890 4230 50  0000 C CNN
+F 2 "" H 4890 4380 50  0001 C CNN
+F 3 "" H 4890 4380 50  0001 C CNN
+	1    4890 4380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4840 4220 4840 4310
+Wire Wire Line
+	4840 4310 4940 4310
+Wire Wire Line
+	4940 4310 4940 4220
+Wire Wire Line
+	4890 4380 4890 4310
+Connection ~ 4890 4310
+Text HLabel 6560 3670 2    60   Input ~ 0
+OUT
+Connection ~ 5830 3220
+$Comp
+L taper T?
+U 1 1 59D5492A
+P 6110 3670
+F 0 "T?" H 6090 3800 60  0000 C CNN
+F 1 "taper" H 6010 3540 60  0000 C CNN
+F 2 "" H 6110 3670 60  0001 C CNN
+F 3 "" H 6110 3670 60  0001 C CNN
+	1    6110 3670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5740 3670 5810 3670
+Wire Wire Line
+	6410 3670 6560 3670
+$Comp
+L C_Small C?
+U 1 1 59D54B4D
+P 3650 3350
+F 0 "C?" H 3660 3420 50  0000 L CNN
+F 1 "0u1" H 3660 3270 50  0000 L CNN
+F 2 "" H 3650 3350 50  0001 C CNN
+F 3 "" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59D54C55
+P 3650 3540
+F 0 "#PWR?" H 3650 3290 50  0001 C CNN
+F 1 "GND" H 3650 3390 50  0000 C CNN
+F 2 "" H 3650 3540 50  0001 C CNN
+F 3 "" H 3650 3540 50  0001 C CNN
+	1    3650 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3540 3650 3450
+Wire Wire Line
+	3650 3250 3650 3220
+Wire Wire Line
+	3650 3220 4440 3220
+Text HLabel 4190 3420 0    60   Input ~ 0
+TUNE
+Wire Wire Line
+	4190 3420 4440 3420
+$Comp
+L +3V3 #PWR?
+U 1 1 59D54D8A
+P 5830 3110
+F 0 "#PWR?" H 5830 2960 50  0001 C CNN
+F 1 "+3V3" H 5830 3250 50  0000 C CNN
+F 2 "" H 5830 3110 50  0001 C CNN
+F 3 "" H 5830 3110 50  0001 C CNN
+	1    5830 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 59D54DAB
+P 4310 2840
+F 0 "#PWR?" H 4310 2690 50  0001 C CNN
+F 1 "+3V3" H 4310 2980 50  0000 C CNN
+F 2 "" H 4310 2840 50  0001 C CNN
+F 3 "" H 4310 2840 50  0001 C CNN
+	1    4310 2840
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59D54DC2
+P 4310 2990
+F 0 "R?" H 4340 3010 50  0000 L CNN
+F 1 "10k" H 4340 2950 50  0000 L CNN
+F 2 "" H 4310 2990 50  0001 C CNN
+F 3 "" H 4310 2990 50  0001 C CNN
+	1    4310 2990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4310 2840 4310 2890
+Wire Wire Line
+	4310 3090 4310 3670
+Wire Wire Line
+	4190 3670 4440 3670
+Text HLabel 4190 3670 0    60   Input ~ 0
+nEN
+Connection ~ 4310 3670
+$EndSCHEMATC
