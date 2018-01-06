@@ -1,4 +1,4 @@
-update=Thu 12 Oct 2017 12:16:32 AM EDT
+update=Sat 06 Jan 2018 12:05:58 AM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,9 @@ LibName39=max2750
 LibName40=taper
 LibName41=2450bl15b050
 LibName42=tlv4172
+LibName43=l4940d2t12-tr
+LibName44=tps54308
+LibName45=l78l33abu
+LibName46=adp150aujz-18
+LibName47=radar-cache
+LibName48=hn1c01fu

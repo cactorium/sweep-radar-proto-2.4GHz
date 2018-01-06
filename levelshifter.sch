@@ -1,0 +1,216 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ad8343
+LIBS:2450bl15b100
+LIBS:mga-645t6
+LIBS:qpa5219
+LIBS:2500bp15m400
+LIBS:pd2425n5050s2
+LIBS:max2750
+LIBS:taper
+LIBS:2450bl15b050
+LIBS:tlv4172
+LIBS:l4940d2t12-tr
+LIBS:tps54308
+LIBS:l78l33abu
+LIBS:adp150aujz-18
+LIBS:radar-cache
+LIBS:hn1c01fu
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HN1C01FU U801
+U 1 1 5A517DB0
+P 5050 2360
+F 0 "U801" H 5050 2510 60  0000 C CNN
+F 1 "HN1C01FU" H 5000 2210 60  0000 C CNN
+F 2 "" H 5050 2360 60  0001 C CNN
+F 3 "" H 5050 2360 60  0001 C CNN
+	1    5050 2360
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HN1C01FU U801
+U 2 1 5A517DF9
+P 7150 2360
+F 0 "U801" H 7150 2510 60  0000 C CNN
+F 1 "HN1C01FU" H 7100 2210 60  0000 C CNN
+F 2 "" H 7150 2360 60  0001 C CNN
+F 3 "" H 7150 2360 60  0001 C CNN
+	2    7150 2360
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +1V8 #PWR079
+U 1 1 5A51803E
+P 4510 2000
+F 0 "#PWR079" H 4510 1850 50  0001 C CNN
+F 1 "+1V8" H 4510 2140 50  0000 C CNN
+F 2 "" H 4510 2000 50  0001 C CNN
+F 3 "" H 4510 2000 50  0001 C CNN
+	1    4510 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V8 #PWR080
+U 1 1 5A5180B2
+P 6620 2050
+F 0 "#PWR080" H 6620 1900 50  0001 C CNN
+F 1 "+1V8" H 6620 2190 50  0000 C CNN
+F 2 "" H 6620 2050 50  0001 C CNN
+F 3 "" H 6620 2050 50  0001 C CNN
+	1    6620 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4510 2000 4510 2260
+Wire Wire Line
+	4510 2260 4670 2260
+Wire Wire Line
+	6620 2050 6620 2260
+Wire Wire Line
+	6620 2260 6770 2260
+$Comp
+L R_Small R801
+U 1 1 5A5180D7
+P 5500 2470
+F 0 "R801" H 5530 2490 50  0000 L CNN
+F 1 "10k" H 5530 2430 50  0000 L CNN
+F 2 "" H 5500 2470 50  0001 C CNN
+F 3 "" H 5500 2470 50  0001 C CNN
+	1    5500 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R803
+U 1 1 5A518161
+P 4740 2760
+F 0 "R803" H 4770 2780 50  0000 L CNN
+F 1 "470" H 4770 2720 50  0000 L CNN
+F 2 "" H 4740 2760 50  0001 C CNN
+F 3 "" H 4740 2760 50  0001 C CNN
+	1    4740 2760
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R802
+U 1 1 5A51825F
+P 7660 2480
+F 0 "R802" H 7690 2500 50  0000 L CNN
+F 1 "10k" H 7690 2440 50  0000 L CNN
+F 2 "" H 7660 2480 50  0001 C CNN
+F 3 "" H 7660 2480 50  0001 C CNN
+	1    7660 2480
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R804
+U 1 1 5A5182DC
+P 6970 2800
+F 0 "R804" H 7000 2820 50  0000 L CNN
+F 1 "470" H 7000 2760 50  0000 L CNN
+F 2 "" H 6970 2800 50  0001 C CNN
+F 3 "" H 6970 2800 50  0001 C CNN
+	1    6970 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR081
+U 1 1 5A5183D2
+P 5500 2640
+F 0 "#PWR081" H 5500 2390 50  0001 C CNN
+F 1 "GND" H 5500 2490 50  0000 C CNN
+F 2 "" H 5500 2640 50  0001 C CNN
+F 3 "" H 5500 2640 50  0001 C CNN
+	1    5500 2640
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR082
+U 1 1 5A5183F6
+P 7660 2650
+F 0 "#PWR082" H 7660 2400 50  0001 C CNN
+F 1 "GND" H 7660 2500 50  0000 C CNN
+F 2 "" H 7660 2650 50  0001 C CNN
+F 3 "" H 7660 2650 50  0001 C CNN
+	1    7660 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4470 2760 4640 2760
+Wire Wire Line
+	4840 2760 5050 2760
+Wire Wire Line
+	5050 2760 5050 2690
+Wire Wire Line
+	5500 2570 5500 2640
+Wire Wire Line
+	5500 2370 5500 2260
+Wire Wire Line
+	5430 2260 5650 2260
+Connection ~ 5500 2260
+Wire Wire Line
+	6670 2800 6870 2800
+Wire Wire Line
+	7070 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2690
+Wire Wire Line
+	7530 2260 7800 2260
+Wire Wire Line
+	7660 2260 7660 2380
+Wire Wire Line
+	7660 2650 7660 2580
+Connection ~ 7660 2260
+Text HLabel 4470 2760 0    60   Input ~ 0
+IN1
+Text HLabel 5650 2260 2    60   Input ~ 0
+OUT1
+Text HLabel 6670 2800 0    60   Input ~ 0
+IN2
+Text HLabel 7800 2260 2    60   Input ~ 0
+OUT2
+$EndSCHEMATC
