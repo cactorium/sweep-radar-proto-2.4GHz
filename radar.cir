@@ -1,0 +1,127 @@
+* /home/kelvin/repos/rajsradar/radar.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sun 14 Jan 2018 01:42:18 PM EST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+R101  +BATT +12VA DNC		
+U105  +BATT GND +12VA L4940D2T12-TR		
+U104  GND Net-_C103-Pad2_ +BATT Net-_R102-Pad2_ ? Net-_C103-Pad1_ TPS54308		
+C103  Net-_C103-Pad1_ Net-_C103-Pad2_ 0u1		
+L101  Net-_C103-Pad2_ Net-_C106-Pad1_ 100u		
+C106  Net-_C106-Pad1_ GND 22u		
+C107  Net-_C106-Pad1_ GND 22u		
+R102  Net-_C106-Pad1_ Net-_R102-Pad2_ 100k		
+R103  Net-_R102-Pad2_ GND 10k		
+C110  +12VA GND 10u		
+C111  +12VA GND 0u1		
+C112  +BATT GND 47u		
+C113  +BATT GND 10u		
+U102  Net-_C106-Pad1_ GND +5V LM7805_TO220		
+U103  Net-_C106-Pad1_ GND +3V3 L78L33ABU		
+U101  +3V3 GND +3V3 ? +1V8 ADP150AUJZ-1.8-R7		
+C108  +5V GND 10u		
+C109  +5V GND 0u1		
+C104  +3V3 GND 10u		
+C105  +3V3 GND 0u1		
+C101  +1V8 GND 10u		
+C102  +1V8 GND 0u1		
+J106  /LEVELSHIFTER/IN1 /LEVELSHIFTER/IN2 Conn_01x02		
+J104  /VCO/nEN Conn_01x01		
+J101  /VCO/TUNE Conn_01x01		
+J103  /POWER_AMP/EN Conn_01x01		
+J102  /POWER_AMP/PDET Conn_01x01		
+J105  /BASEBAND/OUT Conn_01x01		
+J107  +BATT GND Conn_01x02		
+J109  /INPUT_AMP/RF_IN GND Conn_Coaxial		
+J108  /POWER_AMP/OUT ? Conn_Coaxial		
+* Sheet Name: /VCO/
+U201  Net-_C201-Pad1_ /VCO/TUNE GND /VCO/nEN +3V3 +3V3 /SPLITTER/IN GND MAX2750		
+C203  +3V3 GND 220p		
+C202  +3V3 GND 220p		
+C201  Net-_C201-Pad1_ GND 0u1		
+R201  +3V3 /VCO/nEN 10k		
+* Sheet Name: /SPLITTER/
+U301  GND Net-_T301-Pad1_ /POWER_AMP/IN /MIXER/LO_IN PD2425N5050S2		
+T301  Net-_T301-Pad1_ /SPLITTER/IN taper		
+R301  /MIXER/LO_IN /POWER_AMP/IN 100		
+* Sheet Name: /POWER_AMP/
+U401  /POWER_AMP/IN /POWER_AMP/EN GND +5V GND GND /POWER_AMP/PDET ? GND /POWER_AMP/OUT /POWER_AMP/OUT GND +5V ? +5V GND GND QPA5219		
+C404  +5V GND 0u1		
+C405  +5V GND 2u2		
+C401  +5V GND 0u1		
+C402  +5V GND 2u2		
+C403  +5V GND 2u2		
+R401  +3V3 /POWER_AMP/EN 10k		
+R402  /POWER_AMP/PDET GND 27k		
+* Sheet Name: /MIXER/
+U501  GND Net-_C506-Pad2_ Net-_C508-Pad2_ Net-_C511-Pad1_ Net-_C504-Pad1_ Net-_R506-Pad1_ GND GND Net-_C510-Pad2_ Net-_C509-Pad2_ GND Net-_C507-Pad1_ Net-_C505-Pad1_ GND AD8343		
+T502  /MIXER/RF_IN GND Net-_C508-Pad1_ Net-_C506-Pad1_ GND ? 2450BL15B100		
+L501  Net-_C506-Pad1_ Net-_C508-Pad1_ 2.5n		
+C506  Net-_C506-Pad1_ Net-_C506-Pad2_ 1p35		
+C508  Net-_C508-Pad1_ Net-_C508-Pad2_ 1p35		
+R507  Net-_L502-Pad2_ GND 68.1		
+R508  Net-_L503-Pad2_ GND 68.1		
+L502  Net-_C506-Pad2_ Net-_L502-Pad2_ 51nH		
+L503  Net-_C508-Pad2_ Net-_L503-Pad2_ 51nH		
+C511  Net-_C511-Pad1_ GND 0u1		
+R506  Net-_R506-Pad1_ GND 0		
+T504  /MIXER/LO_IN GND Net-_C510-Pad1_ Net-_C509-Pad1_ GND ? 2450BL15B050		
+C510  Net-_C510-Pad1_ Net-_C510-Pad2_ 10n		
+C509  Net-_C509-Pad1_ Net-_C509-Pad2_ 10n		
+C503  +5V GND 0u1		
+C504  Net-_C504-Pad1_ GND 10n		
+R502  +5V Net-_C504-Pad1_ 3.9		
+C501  +5V GND 0u1		
+C502  Net-_C502-Pad1_ GND 10n		
+R501  +5V Net-_C502-Pad1_ 3.9		
+R503  Net-_C502-Pad1_ Net-_C507-Pad1_ 200		
+R504  Net-_C502-Pad1_ Net-_C505-Pad1_ 200		
+R505  Net-_C505-Pad1_ Net-_C507-Pad1_ 400		
+C507  Net-_C507-Pad1_ /BASEBAND/INM 1u		
+C505  Net-_C505-Pad1_ /BASEBAND/INP 1u		
+* Sheet Name: /INPUT_AMP/
+F601  GND Net-_F601-Pad2_ GND /INPUT_AMP/RF_IN 2500BP15M400		
+U601  /INPUT_AMP/EN1 Net-_F601-Pad2_ GND Net-_L602-Pad2_ Net-_L603-Pad1_ ? GND MGA-645T6		
+U602  /INPUT_AMP/EN2 Net-_L603-Pad2_ GND Net-_L601-Pad2_ Net-_L604-Pad1_ ? GND MGA-645T6		
+L606  Net-_F601-Pad2_ GND 2.7n		
+L605  Net-_L603-Pad2_ GND 2.7n		
+L603  Net-_L603-Pad1_ Net-_L603-Pad2_ 4.7n		
+L604  Net-_L604-Pad1_ /MIXER/RF_IN 4.7n		
+L602  +3V3 Net-_L602-Pad2_ 3.9n		
+L601  +3V3 Net-_L601-Pad2_ 3.9n		
+C604  +3V3 GND 11p		
+C603  +3V3 GND 0u1		
+C602  +3V3 GND 11p		
+C601  +3V3 GND 0u1		
+* Sheet Name: /BASEBAND/
+U701  +6V Net-_R708-Pad2_ +6V GND Net-_C704-Pad1_ Net-_C701-Pad1_ Net-_C701-Pad1_ Net-_R701-Pad2_ Net-_R701-Pad1_ Net-_R705-Pad2_ +12V Net-_C703-Pad2_ Net-_RV701-Pad2_ Net-_C702-Pad1_ TLV4172		
+R708  +12V Net-_R708-Pad2_ 100k		
+R709  Net-_R708-Pad2_ GND 100k		
+R702  /BASEBAND/INP Net-_R701-Pad1_ 47k		
+R705  /BASEBAND/INM Net-_R705-Pad2_ 47k		
+R707  Net-_R705-Pad2_ +6V 47k		
+R701  Net-_R701-Pad1_ Net-_R701-Pad2_ 47k		
+C703  Net-_C701-Pad1_ Net-_C703-Pad2_ 1u		
+R706  Net-_C703-Pad2_ +6V 100k		
+RV701  Net-_C702-Pad1_ Net-_RV701-Pad2_ +6V 1M		
+R703  Net-_R701-Pad2_ Net-_C701-Pad2_ 68k		
+R704  Net-_C701-Pad2_ Net-_C704-Pad1_ 68k		
+C704  Net-_C704-Pad1_ +6V 22p		
+C701  Net-_C701-Pad1_ Net-_C701-Pad2_ 22p		
+C702  Net-_C702-Pad1_ /BASEBAND/OUT 1u		
+C706  +12V GND 10u		
+C705  +12V GND 22u		
+C707  +12V GND 1u		
+C708  +12V GND 100n		
+L701  +12VA +12V L_Core_Ferrite_Small		
+* Sheet Name: /LEVELSHIFTER/
+U801  /INPUT_AMP/EN1 Net-_R803-Pad1_ +1V8 /INPUT_AMP/EN2 Net-_R804-Pad1_ +1V8 HN1C01FU		
+R801  /INPUT_AMP/EN1 GND 10k		
+R803  Net-_R803-Pad1_ /LEVELSHIFTER/IN1 10k		
+R802  /INPUT_AMP/EN2 GND 10k		
+R804  Net-_R804-Pad1_ /LEVELSHIFTER/IN2 10k		
+
+.end
