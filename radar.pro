@@ -1,4 +1,4 @@
-update=Sat 06 Jan 2018 12:05:58 AM EST
+update=Mon 26 Mar 2018 11:47:13 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -77,3 +77,7 @@ LibName45=l78l33abu
 LibName46=adp150aujz-18
 LibName47=radar-cache
 LibName48=hn1c01fu
+LibName49=sn74lv1t34
+LibName50=adf4153a
+LibName51=mc2016k30
+LibName52=cp0402q5425entr

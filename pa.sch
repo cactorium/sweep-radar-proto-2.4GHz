@@ -47,11 +47,15 @@ LIBS:l78l33abu
 LIBS:adp150aujz-18
 LIBS:radar-cache
 LIBS:hn1c01fu
+LIBS:sn74lv1t34
+LIBS:adf4153a
+LIBS:mc2016k30
+LIBS:cp0402q5425entr
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 8
 Title ""
 Date ""
 Rev ""

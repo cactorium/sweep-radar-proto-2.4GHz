@@ -47,6 +47,8 @@ LIBS:l78l33abu
 LIBS:adp150aujz-18
 LIBS:radar-cache
 LIBS:hn1c01fu
+LIBS:sn74lv1t34
+LIBS:adf4153a
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
