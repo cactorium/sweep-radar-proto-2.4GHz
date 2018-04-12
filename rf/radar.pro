@@ -1,4 +1,4 @@
-update=Mon 26 Mar 2018 11:47:13 AM EDT
+update=Wed 11 Apr 2018 05:38:10 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -81,3 +81,4 @@ LibName49=sn74lv1t34
 LibName50=adf4153a
 LibName51=mc2016k30
 LibName52=cp0402q5425entr
+LibName53=lm340-5
