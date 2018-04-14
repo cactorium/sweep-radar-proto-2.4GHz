@@ -13,7 +13,7 @@ F1 "ICE5LP1K-SG48ITR50" 0 150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
-S 0 -50 300 -900 0 1 0 N
+S 0 -50 600 -1450 0 1 0 N
 """
 
 EPILOGUE = """ENDDRAW
@@ -50,9 +50,9 @@ with open(ICE5LP1K_PINOUT_CSV, "r") as f:
     for p in range(pinsperbank*b, pinsperbank*(b + 1)):
       name = data[p + 1][0]
       x = -200
-      y = -150 - 50 * (p - pinsperbank*b)
+      y = -150 - 100 * (p - pinsperbank*b)
       ty = data[p + 1][1]
       print("X {} {} {} {} 200 R 50 50 {} 1 {}".format(name, p + 1, x, y, b + 1, ty))
   # add ground paddle pin
-  print("X {} {} {} {} 200 R 50 50 {} 1 {}".format('GND', 49, -200, -150 - 50*12, 1, 'P'))
+  print("X {} {} {} {} 200 R 50 50 {} 1 {}".format('GND', 49, -200, -150 - 100*12, 1, 'P'))
   print(EPILOGUE)
