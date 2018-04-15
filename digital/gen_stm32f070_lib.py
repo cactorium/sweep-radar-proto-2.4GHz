@@ -14,8 +14,7 @@ F1 "STM32F070C6T6" 0 150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
-S 0 -50 600 -1450 0 1 0 N
-"""
+S 0 -50 1600 -1350 0 1 0 N"""
 
 EPILOGUE = """ENDDRAW
 ENDDEF
@@ -39,7 +38,7 @@ with open(STM32_PINOUT_CSV, "r") as f:
       additional_names = row[7].split(',')
     if len(additional_names) > 0:
       for n in additional_names:
-        if any([part in n for part in ['TX', 'RX', 'SPI', 'I2C', 'SDIO', 'USB', 'OSC']]):
+        if any([part in n for part in ['TX', 'RX', 'SPI', 'I2C', 'SDIO', 'USB', 'OSC', 'SWDIO', 'SWCLK']]):
           name = name + '/' + n
     t = 'B'
     if typ == 'I':

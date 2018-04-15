@@ -1,4 +1,4 @@
-update=Fri 13 Apr 2018 10:20:43 AM EDT
+update=Sat 14 Apr 2018 10:01:27 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -59,5 +61,9 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-[general]
-version=1
+LibName33=ads7057
+LibName34=at25sf041
+LibName35=ice5lp1k-sg48itr50
+LibName36=stm32f070c6t6
+LibName37=lfspxo025559reel
+LibName38=sg5032can8

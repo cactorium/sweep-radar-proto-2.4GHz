@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SG5032CAN8.000000M-TJGA3
+D Standard Clock Oscillators 8MHz 50ppm -40C +85C
+F https://www.mouser.com/ProductDetail/Epson-Timing/SG5032CAN-8000000M-TJGA3?qs=sGAEpiMZZMsBj6bBr9Q9aUNo9yki5RuQf0W0SCcgQT0p5Z%2fglRfyWA%3d%3d
+$ENDCMP
+#
+#End Doc Library
