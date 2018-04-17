@@ -86,7 +86,7 @@ F 1 "TLV4172" H 6005 3235 60  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 5805 3385 60  0001 C CNN
 F 3 "" H 5805 3385 60  0001 C CNN
 	1    5805 3385
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L TLV4172 U601
@@ -787,15 +787,9 @@ $EndComp
 Wire Wire Line
 	5070 2675 5070 2760
 Wire Wire Line
-	5070 2960 5070 3285
-Wire Wire Line
-	4835 3285 5405 3285
-Connection ~ 5070 3285
+	5070 2960 5070 3485
 Wire Wire Line
 	5245 2985 5245 3660
-Wire Wire Line
-	5245 3485 5405 3485
-Connection ~ 5245 3485
 Wire Wire Line
 	5245 3860 5245 4075
 Wire Wire Line
@@ -810,4 +804,12 @@ Wire Wire Line
 Connection ~ 5000 2675
 Connection ~ 5245 2675
 Connection ~ 5070 2675
+Wire Wire Line
+	5070 3485 5405 3485
+Wire Wire Line
+	4835 3285 5070 3285
+Connection ~ 5070 3285
+Wire Wire Line
+	5405 3285 5245 3285
+Connection ~ 5245 3285
 $EndSCHEMATC
