@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LDK320AM33R
+D LDO Voltage Regulators 200 mA low quiescent current and high PSRR voltage regulator
+F https://www.mouser.com/ProductDetail/STMicroelectronics/LDK320AM33R?qs=sGAEpiMZZMsGz1a6aV8DcGP3s75Ab7uy0gVNUtcA%252bWU%3d
+$ENDCMP
+#
+#End Doc Library

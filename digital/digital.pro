@@ -1,4 +1,4 @@
-update=Sat 14 Apr 2018 10:01:27 PM EDT
+update=Tue 17 Apr 2018 09:25:46 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,3 +67,7 @@ LibName35=ice5lp1k-sg48itr50
 LibName36=stm32f070c6t6
 LibName37=lfspxo025559reel
 LibName38=sg5032can8
+LibName39=l78l33abu
+LibName40=tps54308
+LibName41=ldk320am33r
+LibName42=tlv74125pdbvr

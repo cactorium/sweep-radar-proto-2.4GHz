@@ -38,7 +38,7 @@ with open(STM32_PINOUT_CSV, "r") as f:
       additional_names = row[7].split(',')
     if len(additional_names) > 0:
       for n in additional_names:
-        if any([part in n for part in ['TX', 'RX', 'SPI', 'I2C', 'SDIO', 'USB', 'OSC', 'SWDIO', 'SWCLK']]):
+        if any([part in n for part in ['TX', 'RX', 'SPI', 'I2C', 'SDIO', 'USB', 'OSC', 'SWDIO', 'SWCLK', 'ADC_IN']]):
           name = name + '/' + n
     t = 'B'
     if typ == 'I':
