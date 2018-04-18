@@ -1,4 +1,4 @@
-update=Tue 17 Apr 2018 06:47:25 PM EDT
+update=Wed 18 Apr 2018 11:54:55 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -72,3 +72,4 @@ LibName40=tps54308
 LibName41=ldk320am33r
 LibName42=tlv74125pdbvr
 LibName43=opa2376qdgkrq1
+LibName44=tlv74312pdbvr

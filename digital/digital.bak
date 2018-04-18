@@ -42,6 +42,7 @@ LIBS:tps54308
 LIBS:ldk320am33r
 LIBS:tlv74125pdbvr
 LIBS:opa2376qdgkrq1
+LIBS:tlv74312pdbvr
 LIBS:digital-cache
 EELAYER 25 0
 EELAYER END
@@ -223,7 +224,7 @@ U 1 1 5AD52759
 P 5550 950
 F 0 "TP101" H 5550 1250 50  0000 C BNN
 F 1 "TEST" H 5550 1200 50  0000 C CNN
-F 2 "Connectors:PINTST" H 5550 950 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5550 950 50  0001 C CNN
 F 3 "" H 5550 950 50  0001 C CNN
 	1    5550 950 
 	1    0    0    -1  
@@ -234,7 +235,7 @@ U 1 1 5AD52917
 P 5600 1050
 F 0 "TP102" H 5600 1350 50  0000 C BNN
 F 1 "TEST" H 5600 1300 50  0000 C CNN
-F 2 "Connectors:PINTST" H 5600 1050 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5600 1050 50  0001 C CNN
 F 3 "" H 5600 1050 50  0001 C CNN
 	1    5600 1050
 	1    0    0    -1  
@@ -371,15 +372,15 @@ Text Label 2200 6250 0    60   ~ 0
 USB_D+
 Text Label 2200 6350 0    60   ~ 0
 USB_D-
-Text Label 1000 6150 0    60   ~ 0
-FLASH_SCK
-Text Label 1000 6250 0    60   ~ 0
-FLASH_MISO
-Text Label 1000 6350 0    60   ~ 0
-FLASH_MOSI
-Text Label 1000 6450 0    60   ~ 0
-FLASH_CSN
 Text Label 1000 6550 0    60   ~ 0
+FLASH_SCK
+Text Label 1000 6350 0    60   ~ 0
+FLASH_MISO
+Text Label 1000 6450 0    60   ~ 0
+FLASH_MOSI
+Text Label 1000 6250 0    60   ~ 0
+FLASH_CSN
+Text Label 1000 6650 0    60   ~ 0
 FPGA_RSTN
 Text Label 5550 6550 2    60   ~ 0
 STM32_BOOT
@@ -498,7 +499,7 @@ U 1 1 5AD71692
 P 8150 1100
 F 0 "TP103" H 8150 1400 50  0000 C BNN
 F 1 "TEST" H 8150 1350 50  0000 C CNN
-F 2 "Connectors:PINTST" H 8150 1100 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8150 1100 50  0001 C CNN
 F 3 "" H 8150 1100 50  0001 C CNN
 	1    8150 1100
 	1    0    0    -1  
@@ -509,7 +510,7 @@ U 1 1 5AD717ED
 P 8250 1200
 F 0 "TP105" H 8250 1500 50  0000 C BNN
 F 1 "TEST" H 8250 1450 50  0000 C CNN
-F 2 "Connectors:PINTST" H 8250 1200 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8250 1200 50  0001 C CNN
 F 3 "" H 8250 1200 50  0001 C CNN
 	1    8250 1200
 	1    0    0    -1  
@@ -520,7 +521,7 @@ U 1 1 5AD7193A
 P 8350 1100
 F 0 "TP104" H 8350 1400 50  0000 C BNN
 F 1 "TEST" H 8350 1350 50  0000 C CNN
-F 2 "Connectors:PINTST" H 8350 1100 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8350 1100 50  0001 C CNN
 F 3 "" H 8350 1100 50  0001 C CNN
 	1    8350 1100
 	1    0    0    -1  
@@ -1047,8 +1048,6 @@ Connection ~ 3150 6700
 Wire Wire Line
 	5050 2450 5850 2450
 Wire Wire Line
-	1000 6150 1550 6150
-Wire Wire Line
 	5050 2350 5850 2350
 Wire Wire Line
 	1000 6250 1550 6250
@@ -1331,7 +1330,6 @@ F 3 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/DMP3098LQ-7?qs=sGA
 	0    1    -1   0   
 $EndComp
 NoConn ~ 6400 4300
-NoConn ~ 1550 6650
 $Comp
 L C_Small C107
 U 1 1 5AD67393
@@ -1417,4 +1415,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3800 4150 3900
 Connection ~ 4000 3800
+Wire Wire Line
+	1000 6650 1550 6650
+NoConn ~ 1550 6150
 $EndSCHEMATC

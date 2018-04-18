@@ -42,6 +42,7 @@ LIBS:tps54308
 LIBS:ldk320am33r
 LIBS:tlv74125pdbvr
 LIBS:opa2376qdgkrq1
+LIBS:tlv74312pdbvr
 LIBS:digital-cache
 EELAYER 25 0
 EELAYER END
@@ -365,7 +366,7 @@ U 1 1 5AD2D792
 P 2150 4750
 F 0 "TP201" H 2150 5050 50  0000 C BNN
 F 1 "TEST" H 2150 5000 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2150 4750 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2150 4750 50  0001 C CNN
 F 3 "" H 2150 4750 50  0001 C CNN
 	1    2150 4750
 	1    0    0    -1  
@@ -376,7 +377,7 @@ U 1 1 5AD2D7D1
 P 2250 4800
 F 0 "TP204" H 2250 5100 50  0000 C BNN
 F 1 "TEST" H 2250 5050 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2250 4800 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2250 4800 50  0001 C CNN
 F 3 "" H 2250 4800 50  0001 C CNN
 	1    2250 4800
 	1    0    0    -1  
@@ -387,7 +388,7 @@ U 1 1 5AD2D80A
 P 2350 4750
 F 0 "TP202" H 2350 5050 50  0000 C BNN
 F 1 "TEST" H 2350 5000 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2350 4750 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2350 4750 50  0001 C CNN
 F 3 "" H 2350 4750 50  0001 C CNN
 	1    2350 4750
 	1    0    0    -1  
@@ -398,7 +399,7 @@ U 1 1 5AD2D846
 P 2450 4800
 F 0 "TP205" H 2450 5100 50  0000 C BNN
 F 1 "TEST" H 2450 5050 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2450 4800 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2450 4800 50  0001 C CNN
 F 3 "" H 2450 4800 50  0001 C CNN
 	1    2450 4800
 	1    0    0    -1  
@@ -446,7 +447,7 @@ U 1 1 5AD2E10B
 P 2600 4750
 F 0 "TP203" H 2600 5050 50  0000 C BNN
 F 1 "TEST" H 2600 5000 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2600 4750 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2600 4750 50  0001 C CNN
 F 3 "" H 2600 4750 50  0001 C CNN
 	1    2600 4750
 	1    0    0    -1  
@@ -622,24 +623,13 @@ Text HLabel 6800 4900 0    60   Input ~ 0
 STM32_USART_RX
 Text HLabel 2250 5700 0    60   Input ~ 0
 STM32_FPGA_CDONE
-$Comp
-L TEST TP206
-U 1 1 5AD3F915
-P 2700 4850
-F 0 "TP206" H 2700 5150 50  0000 C BNN
-F 1 "TEST" H 2700 5100 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2700 4850 50  0001 C CNN
-F 3 "" H 2700 4850 50  0001 C CNN
-	1    2700 4850
-	1    0    0    -1  
-$EndComp
 Text HLabel 6750 2400 0    60   Input ~ 0
 VCO_EN
-Text HLabel 6750 2500 0    60   Input ~ 0
+Text HLabel 1450 5100 0    60   Input ~ 0
 PA_EN
-Text HLabel 6750 2600 0    60   Input ~ 0
+Text HLabel 1350 1500 0    60   Input ~ 0
 LNA1_EN
-Text HLabel 6750 2700 0    60   Input ~ 0
+Text HLabel 1350 1400 0    60   Input ~ 0
 LNA2_EN
 Text HLabel 1700 3800 0    60   Input ~ 0
 PA_PDET
@@ -802,20 +792,17 @@ Wire Wire Line
 Wire Wire Line
 	2250 5700 2950 5700
 Wire Wire Line
-	2700 4850 2700 5700
-Connection ~ 2700 5700
-Wire Wire Line
 	1700 3800 1900 3800
 Wire Wire Line
 	2200 3300 2750 3300
 Wire Wire Line
-	6750 2500 7050 2500
+	1450 5100 2950 5100
 Wire Wire Line
 	6750 2400 7050 2400
 Wire Wire Line
-	6750 2600 7050 2600
+	1350 1400 2600 1400
 Wire Wire Line
-	6750 2700 7050 2700
+	1350 1500 2550 1500
 Wire Wire Line
 	1450 3650 1450 3200
 $Comp
@@ -849,13 +836,11 @@ F 3 "" H 2350 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2350 3650 2350 3750
-NoConn ~ 2750 2500
-NoConn ~ 2750 2600
 NoConn ~ 2750 2700
 NoConn ~ 2750 2900
 NoConn ~ 2750 3400
 NoConn ~ 2750 3500
-NoConn ~ 2950 5100
+NoConn ~ 7050 2500
 NoConn ~ 2950 5800
 NoConn ~ 2950 5900
 NoConn ~ 2950 6000
@@ -868,4 +853,14 @@ NoConn ~ 7000 4600
 NoConn ~ 7000 4700
 NoConn ~ 7000 5100
 NoConn ~ 7000 5200
+Wire Wire Line
+	2600 1400 2600 2500
+Wire Wire Line
+	2600 2500 2750 2500
+Wire Wire Line
+	2550 1500 2550 2600
+Wire Wire Line
+	2550 2600 2750 2600
+NoConn ~ 7050 2600
+NoConn ~ 7050 2700
 $EndSCHEMATC
