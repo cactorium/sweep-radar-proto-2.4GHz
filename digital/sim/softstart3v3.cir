@@ -1,32 +1,34 @@
 Model of TIs soft-start circuit: http://www.ti.com/lit/an/slyt079/slyt079.pdf
 
-Vi vin 0 PULSE(0 1.2 0.1m 20u 20u 9 10)
+Vi vin 0 PULSE(0 3.3 0.1m 20u 20u 9 10)
 Ci vin 0 10u
 
-Ct vin vg 0.1u
-Rt vg 0 3.3k
+Ct vin vg 0.25u
+Rt vg 0 10k
 Cgd vo 1 0.033u
 Rgd 1 vg 470
-Co vo 0 47u
-Rl vo 0 1k
 M1 vo vg vin vin Si2333a
 
-Ct2 vin vg2 0.1u
-Rt2 vg2 0 3.3k
+Co vo 0 47u
+Rl vo 0 1k
+
+Ct2 vin vg2 0.25u
+Rt2 vg2 0 10k
 Cgd2 vo2 2 0.033u
 Rgd2 2 vg2 470
+M2 vo2 vg2 vin vin Si2333b
+
 Co2 vo2 0 47u
 Rl2 vo2 0 1k
-M2 vo2 vg2 vin vin Si2333b
 
 .model Si2333a PMOS (LEVEL=1 VTO=-0.4 KP=18 IS=-1u)
 .model Si2333b PMOS (LEVEL=1 VTO=-1.0 KP=18 IS=-1u)
 
-.measure tran tdiff TRIG vo VAL=0.06 RISE=1 TARG vo VAL=1.14 RISE=1
-.measure tran tdiff2 TRIG vo2 VAL=0.06 RISE=1 TARG vo2 VAL=1.14 RISE=1
+.measure tran tdiff TRIG vo VAL=0.165 RISE=1 TARG vo VAL=3.135 RISE=1
+.measure tran tdiff2 TRIG vo2 VAL=0.165 RISE=1 TARG vo2 VAL=3.135 RISE=1
 
 .control
-tran 1us 10ms UIC
+tran 1us 4ms UIC
 .endc
 
 .end
